@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messagerie</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Messagerie</h1>
+
+    <div class="auth-section">
+      <h2>Inscription</h2>
+      <input type="text" id="signup-username" placeholder="Nom d'utilisateur">
+      <input type="password" id="signup-password" placeholder="Mot de passe">
+      <button onclick="signup()">S'inscrire</button>
+
+      <h2>Connexion</h2>
+      <input type="text" id="username" placeholder="Nom d'utilisateur">
+      <input type="password" id="password" placeholder="Mot de passe">
+      <button onclick="login()">Connexion</button>
+    </div>
+
+    <div id="conversation-list"></div>
+
+    <div id="chat" style="display: none;">
+      <h2 id="conversation-title"></h2>
+      <div id="messages"></div>
+      <input type="text" id="message-input" placeholder="Message...">
+      <button onclick="sendMessage()">Envoyer</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
