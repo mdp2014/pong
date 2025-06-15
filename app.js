@@ -1,4 +1,4 @@
-const supabase = supabase.createClient('https://xyz.supabase.co', 'public-anon-key');
+const supabase = supabase.createClient('https://nchcdxrbfoshfipbyjag.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5jaGNkeHJiZm9zaGZpcGJ5amFnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk5NzE3MDYsImV4cCI6MjA2NTU0NzcwNn0.zrrU6WQ-IGdtHAzSBrboBNSV_Y3ZJoMlRPrEqfajXLw');
 let currentUser = null;
 let currentConversation = null;
 
